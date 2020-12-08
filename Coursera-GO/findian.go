@@ -13,6 +13,8 @@ func main() {
 	text, _ := reader.ReadString('\n')
 	fmt.Println(text)
 
+	fmt.Println(len(text))
+
 	/*
 		if (s[0] == 'i' || s[0] == 'I') &&
 			(s[len(s)-1] == 'n' || s[len(s)-1] == 'N') &&
