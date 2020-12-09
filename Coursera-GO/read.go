@@ -31,12 +31,17 @@ func main() {
 
 		value := strings.Fields(scanner.Text())
 
-		if value[0] != "" {
-
+		if len(value[0]) <= 20 {
+			p.fname = value[0]
+		} else {
+			p.fname = value[0][0:20]
 		}
 
-		p.fname = value[0]
-		p.lname = value[1]
+		if len(value[1]) <= 20 {
+			p.lname = value[1]
+		} else {
+			p.lname = value[1][0:20]
+		}
 
 		result = append(result, p)
 	}
