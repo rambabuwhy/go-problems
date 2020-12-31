@@ -1,3 +1,5 @@
+package main
+
 func canPlaceFlowers(flowerbed []int, n int) bool {
 
 	i := 0
@@ -22,4 +24,9 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
 
 	return count >= n
 
+}
+
+func main() {
+	var flowerbed = make([]int, 0, 0)
+	canPlaceFlowers(flowerbed, 2)
 }
