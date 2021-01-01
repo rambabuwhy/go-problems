@@ -1,15 +1,19 @@
 package app
 
-func start() {
+import (
+	"net/http"
+)
+
+func Start() {
 	//multiplexer
 
-	mux := http.NewServerMux()
+	mux := http.NewServeMux()
 
-	http.HandleFunc("/greet", greet)
+	mux.HandleFunc("/greet", Greet)
 
-	http.HandleFunc("/students", getStudents)
+	mux.HandleFunc("/students", GetStudents)
 
 	//server listen
-	http.ListenAndServe("localhost:8008", nil)
+	http.ListenAndServe("localhost:8008", mux)
 
 }

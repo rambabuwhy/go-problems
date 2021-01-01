@@ -12,13 +12,13 @@ type Students struct {
 	Age  int
 }
 
-func greet(w http.ResponseWriter, r *http.Request) {
+func Greet(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprint(w, "Hello World!")
 
 }
 
-func getStudents(w http.ResponseWriter, r *http.Request) {
+func GetStudents(w http.ResponseWriter, r *http.Request) {
 
 	newStudent := []Students{
 		{Name: "rambabu", Age: 35},
