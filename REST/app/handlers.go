@@ -1,4 +1,4 @@
-package main
+package app
 
 import (
 	"encoding/json"
@@ -35,16 +35,5 @@ func getStudents(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(newStudent)
 
 	}
-
-}
-func main() {
-
-	//multiplexer
-	http.HandleFunc("/greet", greet)
-
-	http.HandleFunc("/students", getStudents)
-
-	//server listen
-	http.ListenAndServe("localhost:8008", nil)
 
 }
