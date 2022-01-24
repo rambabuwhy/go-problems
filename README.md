@@ -1,5 +1,3 @@
-# Data Structures and Algorithms
-Go Programmin
-Data Structures, 
-Algorithms,
-Interview Questions
+# GO Data Structures and Algorithms
+# Name: Rambabu Yerajana
+# Topic: 500+ Optimized Solutions
